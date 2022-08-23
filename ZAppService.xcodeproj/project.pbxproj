@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B2C527628B3888700383FAC /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C527528B3888700383FAC /* CustomerModel.swift */; };
+		4B2C527A28B38DE800383FAC /* ZAppClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C527928B38DE800383FAC /* ZAppClient.swift */; };
+		4B2C527C28B47B3200383FAC /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C527B28B47B3200383FAC /* AuthClient.swift */; };
+		4B5F9C1C28B3722200B7FD78 /* ZAppServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F9C1B28B3722200B7FD78 /* ZAppServiceError.swift */; };
+		4B5F9C2128B3758500B7FD78 /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F9C2028B3758500B7FD78 /* AuthEndpoint.swift */; };
+		4B5F9C2328B3759900B7FD78 /* AuthEnpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F9C2228B3759900B7FD78 /* AuthEnpointType.swift */; };
+		4B5F9C2528B375C900B7FD78 /* AuthParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F9C2428B375C900B7FD78 /* AuthParam.swift */; };
+		4B5F9C2728B3767D00B7FD78 /* ZAppServiceConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F9C2628B3767D00B7FD78 /* ZAppServiceConstant.swift */; };
+		4B5F9C2928B37E9B00B7FD78 /* ZAppParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F9C2828B37E9B00B7FD78 /* ZAppParameter.swift */; };
+		4B9A3CD228B4C10200088737 /* ZAppErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A3CD128B4C10200088737 /* ZAppErrorModel.swift */; };
+		B1B5447AB88C98322701CFC3 /* Pods_ZAppService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFDF028549A3467F6F38330 /* Pods_ZAppService.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		250042FA657F4C8B1CA9CBBC /* Pods-ZAppService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAppService.debug.xcconfig"; path = "Target Support Files/Pods-ZAppService/Pods-ZAppService.debug.xcconfig"; sourceTree = "<group>"; };
+		4B2C527528B3888700383FAC /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
+		4B2C527928B38DE800383FAC /* ZAppClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAppClient.swift; sourceTree = "<group>"; };
+		4B2C527B28B47B3200383FAC /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
+		4B4C366F28B35D3C008DE21E /* ZAppService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAppService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5F9C1B28B3722200B7FD78 /* ZAppServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAppServiceError.swift; sourceTree = "<group>"; };
+		4B5F9C2028B3758500B7FD78 /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		4B5F9C2228B3759900B7FD78 /* AuthEnpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnpointType.swift; sourceTree = "<group>"; };
+		4B5F9C2428B375C900B7FD78 /* AuthParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthParam.swift; sourceTree = "<group>"; };
+		4B5F9C2628B3767D00B7FD78 /* ZAppServiceConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAppServiceConstant.swift; sourceTree = "<group>"; };
+		4B5F9C2828B37E9B00B7FD78 /* ZAppParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAppParameter.swift; sourceTree = "<group>"; };
+		4B9A3CD128B4C10200088737 /* ZAppErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAppErrorModel.swift; sourceTree = "<group>"; };
+		EEFDF028549A3467F6F38330 /* Pods_ZAppService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZAppService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95F618B436F48386FE6DE7B /* Pods-ZAppService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAppService.release.xcconfig"; path = "Target Support Files/Pods-ZAppService/Pods-ZAppService.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B4C366C28B35D3C008DE21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B5447AB88C98322701CFC3 /* Pods_ZAppService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F6FD9818C5DCB4E9DE265C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDF028549A3467F6F38330 /* Pods_ZAppService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B2C527828B38DBD00383FAC /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				4B2C527928B38DE800383FAC /* ZAppClient.swift */,
+				4B2C527B28B47B3200383FAC /* AuthClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		4B4C366628B35D3C008DE21E = {
+			isa = PBXGroup;
+			children = (
+				4B5F9C1728B370E100B7FD78 /* Sources */,
+				4B4C367128B35D3C008DE21E /* ZAppService */,
+				4B4C367028B35D3C008DE21E /* Products */,
+				F1E83F25ABCB16B8C5B10FF1 /* Pods */,
+				3F6FD9818C5DCB4E9DE265C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B4C367028B35D3C008DE21E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B4C366F28B35D3C008DE21E /* ZAppService.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B4C367128B35D3C008DE21E /* ZAppService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZAppService;
+			sourceTree = "<group>";
+		};
+		4B5F9C1728B370E100B7FD78 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B2C527828B38DBD00383FAC /* Client */,
+				4B5F9C1E28B373D500B7FD78 /* Endpoints */,
+				4B5F9C1D28B373CE00B7FD78 /* Model */,
+				4B5F9C1828B371D400B7FD78 /* Core */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4B5F9C1828B371D400B7FD78 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4B5F9C1B28B3722200B7FD78 /* ZAppServiceError.swift */,
+				4B5F9C2628B3767D00B7FD78 /* ZAppServiceConstant.swift */,
+				4B5F9C2828B37E9B00B7FD78 /* ZAppParameter.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4B5F9C1D28B373CE00B7FD78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B2C527528B3888700383FAC /* CustomerModel.swift */,
+				4B9A3CD128B4C10200088737 /* ZAppErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B5F9C1E28B373D500B7FD78 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				4B5F9C1F28B3756E00B7FD78 /* Auth */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		4B5F9C1F28B3756E00B7FD78 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4B5F9C2028B3758500B7FD78 /* AuthEndpoint.swift */,
+				4B5F9C2228B3759900B7FD78 /* AuthEnpointType.swift */,
+				4B5F9C2428B375C900B7FD78 /* AuthParam.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F1E83F25ABCB16B8C5B10FF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				250042FA657F4C8B1CA9CBBC /* Pods-ZAppService.debug.xcconfig */,
+				F95F618B436F48386FE6DE7B /* Pods-ZAppService.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B4C366E28B35D3C008DE21E /* ZAppService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B4C368328B35D3F008DE21E /* Build configuration list for PBXNativeTarget "ZAppService" */;
+			buildPhases = (
+				33A11DDFFA1E42D07FF0C82B /* [CP] Check Pods Manifest.lock */,
+				4B4C366B28B35D3C008DE21E /* Sources */,
+				4B4C366C28B35D3C008DE21E /* Frameworks */,
+				4B4C366D28B35D3C008DE21E /* Resources */,
+				BB59ADD20BB59F79A36ECE0F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZAppService;
+			productName = ZAppService;
+			productReference = 4B4C366F28B35D3C008DE21E /* ZAppService.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B4C366728B35D3C008DE21E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4B4C366E28B35D3C008DE21E = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = 4B4C366A28B35D3C008DE21E /* Build configuration list for PBXProject "ZAppService" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B4C366628B35D3C008DE21E;
+			productRefGroup = 4B4C367028B35D3C008DE21E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B4C366E28B35D3C008DE21E /* ZAppService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B4C366D28B35D3C008DE21E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33A11DDFFA1E42D07FF0C82B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZAppService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB59ADD20BB59F79A36ECE0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZAppService/Pods-ZAppService-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZAppService/Pods-ZAppService-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZAppService/Pods-ZAppService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B4C366B28B35D3C008DE21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B5F9C2128B3758500B7FD78 /* AuthEndpoint.swift in Sources */,
+				4B9A3CD228B4C10200088737 /* ZAppErrorModel.swift in Sources */,
+				4B2C527C28B47B3200383FAC /* AuthClient.swift in Sources */,
+				4B5F9C2528B375C900B7FD78 /* AuthParam.swift in Sources */,
+				4B5F9C2928B37E9B00B7FD78 /* ZAppParameter.swift in Sources */,
+				4B5F9C2328B3759900B7FD78 /* AuthEnpointType.swift in Sources */,
+				4B2C527628B3888700383FAC /* CustomerModel.swift in Sources */,
+				4B2C527A28B38DE800383FAC /* ZAppClient.swift in Sources */,
+				4B5F9C2728B3767D00B7FD78 /* ZAppServiceConstant.swift in Sources */,
+				4B5F9C1C28B3722200B7FD78 /* ZAppServiceError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B4C368128B35D3F008DE21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B4C368228B35D3F008DE21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B4C368428B35D3F008DE21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 250042FA657F4C8B1CA9CBBC /* Pods-ZAppService.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZAppService/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.longph.ZAppService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B4C368528B35D3F008DE21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95F618B436F48386FE6DE7B /* Pods-ZAppService.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZAppService/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.longph.ZAppService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B4C366A28B35D3C008DE21E /* Build configuration list for PBXProject "ZAppService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4C368128B35D3F008DE21E /* Debug */,
+				4B4C368228B35D3F008DE21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B4C368328B35D3F008DE21E /* Build configuration list for PBXNativeTarget "ZAppService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4C368428B35D3F008DE21E /* Debug */,
+				4B4C368528B35D3F008DE21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B4C366728B35D3C008DE21E /* Project object */;
+}
