@@ -23,36 +23,10 @@ public final class ZAppClient: ClientEndPointType {
 }
 
 extension ZAppClient {
-    internal func requestAPICommon<T: Decodable>(request: URLRequestConvertible, type: T.Type) -> Observable<ZAppServiceResponse<T>> {
-        guard let urlRequest = request.urlRequest else {
-            return Observable.just(ZAppServiceResponse<T>.failure(.unknow))
-        }
-        
-        return Observable.create { obs in
-            let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
-                if let data = data, let response = response as? HTTPURLResponse {
-                    if 200 ..< 300 ~= response.statusCode {
-                        do {
-                            let dataModel = try JSONDecoder().decode(T.self, from: data)
-                            obs.onNext(.success(dataModel))
-                        } catch {
-                            obs.onNext(.failure(.decodeError))
-                        }
-                    } else {
-                        do {
-                            let errorModel = try JSONDecoder().decode(ZAppErrorModel.self, from: data)
-                            obs.onNext(.failure(.errorFromBE(errorModel)))
-                        } catch {
-                            obs.onNext(.failure(.decodeError))
-                        }
-                    }
-                } else {
-                    obs.onNext(.failure(.unknow))
-                }
-            }
-            task.resume()
-            
-            return Disposables.create()
-        }
+    internal func requestAPICommon<T: Decodable>(request: URLRequestConvertible, type: T.Type) -> Single<T> {
+        return URLSession.shared.rx.data(request: request.urlRequest!)
+            .observe(on: MainScheduler.instance)
+            .map{ try JSONDecoder().decode(T.self, from: $0) }
+            .asSingle()
     }
 }

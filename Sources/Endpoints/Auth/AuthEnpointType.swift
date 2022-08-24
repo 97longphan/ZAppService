@@ -8,9 +8,7 @@
 import Foundation
 import RxSwift
 
-public typealias CustomerResult = Result<CustomerWrapper, ZAppServiceError>
-
 public protocol AuthEnpointType {
-    func login(_ param: AuthLoginParam) -> Observable<CustomerResult>
+    func login(_ param: AuthLoginParam) -> Single<CustomerWrapper>
 }
 
