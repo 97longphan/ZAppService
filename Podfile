@@ -7,5 +7,6 @@ target 'ZAppService' do
 
   # Pods for ZAppService
     pod 'Alamofire'
-    pod 'RxSwift'
+    pod 'RxSwift', '6.5.0'
+    pod 'RxCocoa', '6.5.0'
 end
