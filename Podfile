@@ -7,6 +7,5 @@ target 'ZAppService' do
 
   # Pods for ZAppService
     pod 'Alamofire'
-    pod 'ZAppComponent', :git => 'https://github.com/97longphan/ZAppComponent', :branch => 'main'
-
+    pod 'RxSwift'
 end

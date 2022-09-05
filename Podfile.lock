@@ -1,43 +1,20 @@
 PODS:
   - Alamofire (5.6.2)
-  - RxCocoa (6.5.0):
-    - RxRelay (= 6.5.0)
-    - RxSwift (= 6.5.0)
-  - RxRelay (6.5.0):
-    - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
-  - ZAppComponent (0.1.0):
-    - RxCocoa (= 6.5.0)
-    - RxSwift (= 6.5.0)
 
 DEPENDENCIES:
   - Alamofire
-  - ZAppComponent (from `https://github.com/97longphan/ZAppComponent`, branch `main`)
+  - RxSwift
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - RxCocoa
-    - RxRelay
     - RxSwift
-
-EXTERNAL SOURCES:
-  ZAppComponent:
-    :branch: main
-    :git: https://github.com/97longphan/ZAppComponent
-
-CHECKOUT OPTIONS:
-  ZAppComponent:
-    :commit: 970dd4afde33e3170046440087d8e79b24a1f4fe
-    :git: https://github.com/97longphan/ZAppComponent
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
-  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
-  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
-  ZAppComponent: 126fad6d6847cca12e56651b04a78dbce6eba6aa
 
-PODFILE CHECKSUM: 7c43dd875d50bc9f6be17bdfac6b4bf6c4ac7bc1
+PODFILE CHECKSUM: 70ca0fc54d3fc0194941e83b322bf42942f3a987
 
 COCOAPODS: 1.11.3
